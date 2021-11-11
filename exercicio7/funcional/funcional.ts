@@ -1,3 +1,7 @@
+/**
+ * Representa uma lista numerica
+ * @public
+ */
 class Numeros {
     private lista: Array<any>;
     private listaOrdenada: Array<number>;
@@ -9,24 +13,45 @@ class Numeros {
         this.tamanhoDaLista = lista.length;
     }
 
-    public maiorValor(): number {
+    /**
+     * 
+     * @returns valor do maior numero da lista
+     */
+    private maiorValor(): number {
         return this.listaOrdenada[this.tamanhoDaLista -1 ];
     }
 
-    public menorValor(): number {  
+    /**
+     * 
+     * @returns valor do menor numero da lista
+     */
+    private menorValor(): number {  
         return this.listaOrdenada[0];
     }
 
-    public mediaDosValores(): number {
+    /**
+     * 
+     * @returns a media dos valores da lista
+     */
+    private mediaDosValores(): number {
         let somaDosNumeros: number = this.lista.reduce((valorAnterior: number, valorAtual: number) =>  valorAnterior + valorAtual);
         let mediaDosNumeros: string = (somaDosNumeros/this.tamanhoDaLista).toFixed(2);
 
         return Number(mediaDosNumeros);
     }
+
+    /**
+     * 
+     * @returns mensagem com o maior numero da lista, o menor numero da lista e a media dos numeros da lista
+     */
+    public estatistica(): string {
+        const maiorNumero: number = this.maiorValor();
+        const menorNumero: number = this.menorValor();
+        const mediaDosNumeros: number = this.mediaDosValores();
+        
+        return `Maior número: ${maiorNumero}, Menor número: ${menorNumero}, Média dos números: ${mediaDosNumeros}`;
+    }
 }
 
 const estatistica = new Numeros([3, 3, 5]);
-
-console.log(`
-    Maior número: ${estatistica.maiorValor()}, Menor número: ${estatistica.menorValor()}, Média dos números: ${estatistica.mediaDosValores()}
-`);
+console.log(estatistica.estatistica());
