@@ -1,4 +1,4 @@
-export class Palavra {
+export default class Palavra {
     constructor() {
         this.vogais = "aáàâãeéèễẽiiíìîĩoóòôõuúùûũ";
     }

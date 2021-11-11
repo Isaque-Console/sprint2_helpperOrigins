@@ -1,4 +1,4 @@
-export class Palavra {
+export default class Palavra {
     public vogais: string = "aáàâãeéèễẽiiíìîĩoóòôõuúùûũ";
 
     public contadorDeVogais(texto: string): number {
