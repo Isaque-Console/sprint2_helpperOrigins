@@ -1,6 +1,6 @@
 /**
+ * Numeros
  * Representa uma lista numerica
- * @public
  */
 var Numeros = /** @class */ (function () {
     function Numeros(lista) {
@@ -9,6 +9,8 @@ var Numeros = /** @class */ (function () {
         this.tamanhoDaLista = lista.length;
     }
     /**
+     * maiorValor
+     * funcao para descobrir o maior valor da lista
      *
      * @returns valor do maior numero da lista
      */
@@ -16,6 +18,8 @@ var Numeros = /** @class */ (function () {
         return this.listaOrdenada[this.tamanhoDaLista - 1];
     };
     /**
+     * menorValor
+     * funcao para descobrir o menor valor da lista
      *
      * @returns valor do menor numero da lista
      */
@@ -23,6 +27,8 @@ var Numeros = /** @class */ (function () {
         return this.listaOrdenada[0];
     };
     /**
+     * mediaDosValores
+     * funcao para descobrir o maior valor da lista
      *
      * @returns a media dos valores da lista
      */
@@ -32,6 +38,8 @@ var Numeros = /** @class */ (function () {
         return Number(mediaDosNumeros);
     };
     /**
+     * estatistica
+     * funcao para descobrir os numeros maior, menor e media dos numeros da lista
      *
      * @returns mensagem com o maior numero da lista, o menor numero da lista e a media dos numeros da lista
      */

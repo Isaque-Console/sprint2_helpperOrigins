@@ -1,6 +1,6 @@
 /**
+ * Numeros
  * Representa uma lista numerica
- * @public
  */
 class Numeros {
     private lista: Array<any>;
@@ -14,6 +14,8 @@ class Numeros {
     }
 
     /**
+     * maiorValor
+     * funcao para descobrir o maior valor da lista
      * 
      * @returns valor do maior numero da lista
      */
@@ -22,6 +24,8 @@ class Numeros {
     }
 
     /**
+     * menorValor
+     * funcao para descobrir o menor valor da lista
      * 
      * @returns valor do menor numero da lista
      */
@@ -30,6 +34,8 @@ class Numeros {
     }
 
     /**
+     * mediaDosValores
+     * funcao para descobrir o maior valor da lista
      * 
      * @returns a media dos valores da lista
      */
@@ -41,6 +47,8 @@ class Numeros {
     }
 
     /**
+     * estatistica
+     * funcao para descobrir os numeros maior, menor e media da lista
      * 
      * @returns mensagem com o maior numero da lista, o menor numero da lista e a media dos numeros da lista
      */

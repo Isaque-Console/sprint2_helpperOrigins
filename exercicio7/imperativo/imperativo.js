@@ -1,6 +1,6 @@
 /**
+ * Numbers
  * Representa uma lista numerica
- * @public
  */
 var Numbers = /** @class */ (function () {
     function Numbers(array) {
@@ -10,7 +10,7 @@ var Numbers = /** @class */ (function () {
         this.arraySize = array.length;
     }
     /**
-     * @remarks
+     * convertToNumber
      * converte todos os elementos do array inicial para number
      */
     Numbers.prototype.convertToNumber = function () {
@@ -19,7 +19,7 @@ var Numbers = /** @class */ (function () {
         }
     };
     /**
-     * @remarks
+     * sortArray
      * ordena o array inicial em ordem crescente
      */
     Numbers.prototype.sortArray = function () {
@@ -34,6 +34,8 @@ var Numbers = /** @class */ (function () {
         }
     };
     /**
+     * largerNumber
+     * funcao para descobrir o maior valor do array inicial
      *
      * @returns valor do maior numero do array inicial
      */
@@ -41,6 +43,8 @@ var Numbers = /** @class */ (function () {
         return this.initialArray[this.arraySize - 1];
     };
     /**
+     * smallerNumber
+     * funcao para descobrir o menor valor do array inicial
      *
      * @returns valor do menor numero do array inicial
      */
@@ -48,6 +52,8 @@ var Numbers = /** @class */ (function () {
         return this.initialArray[0];
     };
     /**
+     * average
+     * funcao para descobrir o maior valor do array inicial
      *
      * @returns a media dos valores do array inicial
      */
@@ -57,6 +63,8 @@ var Numbers = /** @class */ (function () {
         return Number(numberAverage);
     };
     /**
+     * statistic
+     * funcao para descobrir os numeros maior, menor e media do array inicial
      *
      * @returns mensagem com o maior numero, o menor numero e a media dos numeros do array inicial
      */

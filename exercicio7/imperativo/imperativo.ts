@@ -1,6 +1,6 @@
 /**
+ * Numbers
  * Representa uma lista numerica
- * @public
  */
 class Numbers {
     private initialArray: Array<any>;
@@ -14,7 +14,7 @@ class Numbers {
     }
 
     /**
-     * @remarks
+     * convertToNumber
      * converte todos os elementos do array inicial para number
      */
     private convertToNumber(): void {
@@ -24,7 +24,7 @@ class Numbers {
     }
 
     /**
-     * @remarks 
+     * sortArray 
      * ordena o array inicial em ordem crescente
      */
     private sortArray(): void {
@@ -40,6 +40,8 @@ class Numbers {
     }
 
     /**
+     * largerNumber
+     * funcao para descobrir o maior valor do array inicial
      * 
      * @returns valor do maior numero do array inicial
      */
@@ -48,6 +50,8 @@ class Numbers {
     }
 
     /**
+     * smallerNumber
+     * funcao para descobrir o menor valor do array inicial
      * 
      * @returns valor do menor numero do array inicial
      */
@@ -56,6 +60,8 @@ class Numbers {
     }
 
     /**
+     * average
+     * funcao para descobrir o maior valor do array inicial
      * 
      * @returns a media dos valores do array inicial
      */
@@ -67,6 +73,8 @@ class Numbers {
     }
 
     /**
+     * statistic
+     * funcao para descobrir os numeros maior, menor e media do array inicial
      * 
      * @returns mensagem com o maior numero, o menor numero e a media dos numeros do array inicial
      */
